@@ -33,7 +33,6 @@ public class CategoryServiceImpl implements CategoryService {
 
 	@Override
 	public CategoryDTO getCategoryByName(String name) {
-		
 		return this.categoryMapper.categoryToCategoryDTO(categoryRepository.findByName(name));
 	}
 
