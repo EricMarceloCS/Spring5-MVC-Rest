@@ -6,4 +6,6 @@ import dev.ericmarcelo.mvc.rest.domain.Category;
 
 public interface CategoryRepository extends JpaRepository<Category, Long> {
 
+	Category findByName(String anyString);
+
 }
